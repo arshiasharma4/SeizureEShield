@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,86 +8,86 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="img/icon.png">
 </head>
+
 <body>
     <header>
         <img src="img/logo.png" alt="SeizurEShield Logo" class="logo">
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#team">Our Team</a>
+        <a href="#mission">Mission</a>
+        <a href="#project statement">Project Statement</a>
         <a href="#project">Project Outline</a>
         <a href="#techincal approach">Techincal Approach</a>
+        <a href="#team">Our Team</a>
         <a href="#contact">Contact</a>
+        <a href="https://github.com/annali-2/seizure" target="_blank">App Code</a>
     </nav>
 
     <div class="container">
-        <section id="about" class="section about-section">
-        <div id="about" class="section">
-            <h2>About Us</h2>
-            <h4>Welcome to SeizurEShield, where we harness the power of machine learning to provide advanced solutions for epilepsy care. </h4>
-            <p>Our mission is to empower individuals with epilepsy through advanced machine learning solutions to detect and predict seizure activity, enhancing their quality of life and ensuring their dignity and safety.</p>
-        </div>
-        <div class="about-img">
-            <img src="img/logo3.png" alt="About Us Image">
-        </div>
-    </section>
+        <section id="mission" class="section about-section">
+            <div id="mission" class="section">
+                <h2>Our Mission</h2>
+                <h4>Welcome to SeizurEShield, where we harness the power of machine learning to provide advanced
+                    solutions for epilepsy care. </h4>
+                <p>Our goal is to empower individuals with epilepsy through advanced machine learning solutions to
+                    detect and predict seizure activity, enhancing their quality of life and ensuring their dignity and
+                    safety.</p>
+            </div>
+            <div class="about-img">
+                <img src="img/logo3.png" alt="About Us Image">
+            </div>
+        </section>
 
-        <div id="team" class="section">
-            <h2>Our Team</h2>
-            <div class="team-member">
-                <img src="img/bo.png" alt="Bo">
-                <div>
-                    <h3>Bo He</h3>
-                    <p><strong>Role:</strong> Infrastructure & Data Engineering Lead</p>
-                    <p><strong>Bio:</strong> Bo is a life long learner currently works as an investment engineer at Bridgewater. Outside of work and school, he enjoys reading, swimming and traveling.</p>
-                </div>
-            </div>
-            <div class="team-member">
-                <img src="img/anna.png" alt="Anna">
-                <div>
-                    <h3>Anna Li</h3>
-                    <p><strong>Role:</strong> EDA Lead</p>
-                    <p><strong>Bio:</strong> Anna is an aspiring data scientist who currently works as a data analyst/data engineer at Boeing. Outside of work and school, she enjoys climbing, listening to music, and eating &#128578</p>
-                </div>
-            </div>
-            <div class="team-member">
-                <img src="img/alek.png" alt="Alek">
-                <div>
-                    <h3>Alek Lichucki</h3>
-                    <p><strong>Role:</strong> ML Engineer Lead</p>
-                    <p><strong>Background:</strong> Alek is a data consultant with Slalom working across data science, data engineering, and data visualization. Outside of work and school he enjoys traveling, climbing, video games, and catering to his dog Bagels many needs.</p>
-                </div>
-            </div>
-            <div class="team-member">
-                <img src="img/maegan.png" alt="Maegan">
-                <div>
-                    <h3>Maegan Kornexl</h3>
-                    <p><strong>Role:</strong> Project Manager & SME</p>
-                    <p><strong>Bio:</strong> Maegan is a data analyst and machine learning engineer currently working on chemical detection projects at UES Inc. She loves eating tasty food and playing exploration-based video games, and owes her continued sanity to her two cats, Daisy and Pippin.</p>
-                </div>
-            </div>
-            <div class="team-member">
-                <img src="img/arshia.png" alt="Arshia">
-                <div>
-                    <h3>Arshia Sharma</h3>
-                    <p><strong>Role:</strong> Chief Facilitator & MVP App Developer</p>
-                    <p><strong>Bio:</strong> Arshia is a data scientist at The Walt Disney Company and works on multiple projects across the data science & software development space. When she has time outside of work & school, she is an avid reader and enjoys finding good coffee shops. </p>
-                </div>
-            </div>
+        <div id="project statement" class="section">
+            <h2>Project Statement</h2>
+            <p>About 1 in 10 people will experience a seizure in their lifetime, and for some, these seizures become a
+                chronic problem called epilepsy. Epilepsy is characterized by recurrent seizures that can range in both
+                frequency and severity and currently affects an estimated 50 million people worldwide, making it one of
+                the most common neurological disorders globally next to Alzheimer’s (55 million) and Parkinson’s (10
+                million). It’s caused by a variety of things like traumatic brain injuries, strokes, genetic
+                inheritance, and even severe infections, making it difficult to prevent.</p>
+            <p>However, what makes epilepsy so difficult to live with is its unpredictability. While approximately 65%
+                of people with generalized epilepsy report “getting auras,” or feelings that can warn you if a seizure
+                is about to happen, many people don’t experience those – there’s also 4 other types of epilepsy in
+                addition. This means that at any given point in time a seizure could just happen with very little
+                warning, and the impact of that seizure could range from time loss (absence seizures) to convulsions,
+                complete unconsciousness, and immediate hospitalization (grand-mal seizures).</p>
+            <p>Ultimately, this problem presents both quality of life (always needing to be accompanied, restrictions on
+                driving/etc.) and safety concerns (what if you’re standing when a seizure hits and you fall/get
+                injured?) that can infringe on a person’s ability to even do something like going outside for a walk by
+                themselves.</p>
+            <p>Most medicines do not have a complete 100% success rate for treating medical problems, and medications
+                used to treat epilepsy are no exception to this rule. Thus, we’d like to propose the use of deep or
+                machine learning techniques to first attempt to detect, and then possibly predict, seizure activity from
+                EEG recordings of the human brain.
+            </p>
+
         </div>
+
 
         <div id="project" class="section">
             <h2>Project Outline</h2>
-            <p>Our project, SeizurEShield, focuses on developing an algorithm to detect seizure activity from EEG recordings using advanced machine learning techniques. Key features of our project include:</p>
+            <p>Our project, SeizurEShield, focuses on developing an algorithm to detect seizure activity from EEG
+                recordings using advanced machine learning techniques. Key features of our project include:</p>
             <ul>
-                <li><strong>Data Preprocessing Pipeline:</strong> Extracting and normalizing features from raw EEG signals.</li>
-                <li><strong>Machine Learning Models:</strong> Implementing logistic regression, SVM, CNN, and/or LSTM models for seizure detection.</li>
-                <li><strong>Frontend Development:</strong> Allowing users to upload EEG files and view results on our website.</li>
-                <li><strong>Backend API Development:</strong> Creating RESTful endpoints for real-time data processing and predictions.</li>
-                <li><strong>Evaluation and Optimization:</strong> Using performance metrics to tune and optimize our models.</li>
+                <li><strong>Data Preprocessing Pipeline:</strong> Extracting and normalizing features from raw EEG
+                    signals.</li>
+                <li><strong>Machine Learning Models:</strong> Implementing logistic regression, SVM, CNN, and/or LSTM
+                    models for seizure detection.</li>
+                <li><strong>Frontend Development:</strong> Allowing users to upload EEG files and view results on our
+                    website.</li>
+                <li><strong>Backend API Development:</strong> Creating a Flask application to enable endpoints for
+                    real-time data processing
+                    and seizure detection.</li>
+                <li><strong>Evaluation and Optimization:</strong> Using performance metrics to tune and optimize our
+                    models.</li>
             </ul>
-            <p>Our goal is to provide accurate seizure detection insights to aid in timely medical intervention and reduce the manual effort required by neurologists.</p>
+            <p>Our project aims to provide accurate seizure detection insights to aid in timely medical intervention and
+                reduce the manual effort required by neurologists.</p>
+        </div>
+        <div class="about-img">
+            <img src="img/medical.jpeg" alt="Medical Image" width="50%">
         </div>
 
         <div id="techincal approach" class="section">
@@ -94,10 +95,75 @@
             <p>WIP</p>
         </div>
 
+        <div id="team" class="section">
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="img/bo.png" alt="Bo">
+                <div>
+                    <a href="http://linkedin.com/in/bo-j-he" class="team-member-link" target="_blank">
+                        <h3>Bo He</h3>
+                    </a>
+                    <p><strong>Role:</strong> Infrastructure & Data Engineering Lead</p>
+                    <p><strong>Bio:</strong> Bo is a life long learner currently works as an investment engineer at
+                        Bridgewater. Outside of work and school, he enjoys reading, swimming and traveling.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="img/anna.png" alt="Anna">
+                <div>
+                    <a href="https://www.linkedin.com/in/annali222/" class="team-member-link" target="_blank">
+                        <h3>Anna Li</h3>
+                    </a>
+                    <p><strong>Role:</strong> EDA Lead</p>
+                    <p><strong>Bio:</strong> Anna is an aspiring data scientist who currently works as a data
+                        analyst/data engineer at Boeing. Outside of work and school, she enjoys climbing, listening to
+                        music, and eating &#128578</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="img/alek.png" alt="Alek">
+                <div>
+                    <a href="https://www.linkedin.com/in/aleklichucki/" class="team-member-link" target="_blank">
+                        <h3>Alek Lichucki</h3>
+                    </a>
+                    <p><strong>Role:</strong> ML Engineer Lead</p>
+                    <p><strong>Background:</strong> Alek is a data consultant with Slalom working across data science,
+                        data engineering, and data visualization. Outside of work and school he enjoys traveling,
+                        climbing, video games, and catering to his dog Bagels many needs.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="img/maegan.png" alt="Maegan">
+                <div>
+                    <a href="https://www.linkedin.com/in/maegan-kornexl/" class="team-member-link" target="_blank">
+                        <h3>Maegan Kornexl</h3>
+                    </a>
+                    <p><strong>Role:</strong> Project Manager & SME</p>
+                    <p><strong>Bio:</strong> Maegan is a data analyst and machine learning engineer currently working on
+                        chemical detection projects at UES Inc. She loves eating tasty food and playing
+                        exploration-based video games, and owes her continued sanity to her two cats, Daisy and Pippin.
+                    </p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="img/arshia.png" alt="Arshia">
+                <div>
+                    <a href="https://www.linkedin.com/in/arshia-sharma/" class="team-member-link" target="_blank">
+                        <h3>Arshia Sharma</h3>
+                    </a>
+                    <p><strong>Role:</strong> Chief Facilitator & MVP App Developer</p>
+                    <p><strong>Bio:</strong> Arshia is a data scientist at The Walt Disney Company and works on multiple
+                        projects across the data science & software development space. When she has time outside of work
+                        & school, she is an avid reader and enjoys finding good coffee shops. </p>
+                </div>
+            </div>
+        </div>
+
 
         <div id="contact" class="section">
             <h2>Contact Us</h2>
-            <p>If you have any questions or would like to learn more about our project, please reach out to us
+            <p>If you have any questions or would like to learn more about our project, please reach out to us by
+                selecting on our names above!
         </div>
     </div>
 
@@ -105,4 +171,5 @@
         <p>&copy; 2024 SeizurEShield. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
