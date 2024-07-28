@@ -87,12 +87,22 @@
                 reduce the manual effort required by neurologists.</p>
         </div>
         <div class="about-img">
-            <img src="img/medical.jpeg" alt="Medical Image" width="50%">
+            <center><img src="img/medical.jpeg" alt="Medical Image" width="50%"></center>
         </div>
 
         <div id="techincal approach" class="section">
             <h2>Techincal Approach</h2>
-            <p>WIP</p>
+            <p>The data set used included 4000+ different recordings housed in separate EDF files. These files also included annotations denoting when there was a seizure or not. The data came from people of all ages and was evenly distributed between ages and genders. The data pipeline we created was to first convert these EDF files into CSV files, included in this process was creating timestamps and then using these timestamps to join to the annotated files. Once the data was in that format we then proceeded to standardize the montage pairs so that we are able to get the readings at the individual nodes.</p>
+
+            <p>For the features which are the most important are the standardized readings at each specific timestamp. We tested a few different approaches for modeling this data, we tested a SVM model approach, a RNN model approach, and a RESNET Transfer Learning approach. We ended up selecting the RNN model approach since this had the best metrics that we were evaluating against. We found that the model worked well in identifying when there was not a seizure since we had a very low false positive rate with a high accuracy which was a function of most of the data not including seizures. Where the model didn’t work as well was in identifying seizures which was illustrated by the higher false negative rate which we were able to get to a 35%.</p>
+
+            <p>When training the model we included a test train split and evaluated both the train and the test set for a list of common metrics, the metrics we cared about were: accuracy, loss, false positive rate, and false negative rate. We compared against different models that we were testing and selected the best final model while prioritizing the false negative rate. We prioritized this metric due to discussions with people in industry saying this would be the most important metric that they care about in our case. Our initial approaches had a higher false negative rate and we would focus on minimizing this rate when selecting the final model.</p>
+
+            <p>These model insights are very helpful to neurologists studying these EDF files where we are able to get insights very quickly and save them a lot of time when analyzing these studies. This model output is a good start for identifying when there is a seizure or not and allows for much faster turnaround to analyze these EDF files which would allow for more access to care for disadvantaged people.</p>
+
+            <p>There were a few different challenges we faced during this, the first one was figuring out how to get the data into a format that a ML tool could be trained on. We attempted adding all of these files into a single CSV but found that was not practical, we then settled on converting each EDF into a different annotated CSV file. Our next technical challenge was figuring out how to standardize each of the different montages since there were different columns for each different montage. The technical innovation for both of these approaches is different to what other groups have done before in previous work since other groups would take one of the two things we worked on but instead we combined these approaches which is novel in comparison to other approaches. The challenge we ran into was minimizing the false negative rate, we found that our false negative rate was quite high so we set out to minimize this. To address this we added a layer to the RNN model where we added a LSTM layer which was able to drastically reduce the false negative rate. This is an innovation since previous work only included the RNN model without any LSTM.</p>
+
+            <p>If we would have more time and money we would focus on minimizing the false negative rate through 2 approaches. The first would be to increase the sequence length that the RNN is considering and performing some tuning on this.​​ This would allow the model to have more context for the predictions that it is trying to take into account. The next thing we would have wanted to do is perform more in depth hyperparameter tuning, we would have considered different optimizers, changing the learning rate, and finally testing different number of layers that are included in the model.</p>
         </div>
 
         <div id="team" class="section">
